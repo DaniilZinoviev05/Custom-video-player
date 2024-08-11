@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="video.css">
+	<script src="video.js" defer></script>
+	<title>video</title>
+</head>
+<body>
+	<section> 
+		<div class="container2">
+			<div id="video_player">
+				<div class="loader"></div>
+				<div class="play_1"><i class="material-icons play1">play_arrow</i></div>
+
+				<video type="video/mp4" preload="metadata" class="main-video" data-voiceover="НЕ что-то">
+					<source src="demo-video-4k-demo-4k-video_(VIDEOMIN.NET).mp4" size="480">
+					<source src="demo-video-4k-demo-4k-video_(VIDEOMIN.NET).mp4" size="720">
+					<source src="demo-video-4k-demo-4k-video_(VIDEOMIN.NET).mp4" size="1080">
+				</video>
+
+				<div class="progressAreaTime">0:00</div>
+				<div class="controls">
+					<div class="progress-area">
+						<div class="thumbnail"></div>
+						<div class="progress-bar">
+							<span></span>
+						</div>
+						<div class="bufferedbar"></div>
+					</div>
+						<div class="controls-list">
+							<div class="controls-left">
+								<span class="icon">
+									<i class="material-icons fast-rewind">replay_10</i>	
+								</span>
+
+								<span class="icon">
+									<i class="material-icons play">play_arrow</i>	
+								</span>
+
+								<span class="icon">
+									<i class="material-icons fast-forward">forward_10</i>	
+								</span>	
+
+								<span class="icon">
+									<i class="material-icons volume">volume_up</i>
+									<input type="range" min="0" max="100" class="volume-range">	
+								</span>	
+								<div class="timer">
+									<span class="current">0:00</span> <span class="duration">0:00</span>
+								</div>
+							</div>
+
+
+							<div class="controls-right">
+								<span>
+									<i class="material-icons settingsBtn">settings</i>
+								</span>
+									
+								<span class="icon">
+									<i class="material-icons picture_in_picture">picture_in_picture_alt</i>	
+								</span>
+
+								<span class="icon">
+									<i class="material-icons fullscreen">fullscreen</i>	
+								</span>	
+							</div>
+					</div>	
+				</div>
+				<div class="settings">
+			    <div data-label="settingHome">
+			      <ul>
+			        <li data-label="speed">
+			          <span> Скорость </span>
+			          <span class="material-icons icon">
+			            arrow_forward_ios
+			          </span>
+			        </li>
+			        <li data-label="voiceover">
+			          <span> Озвучка </span>
+			          <span class="material-icons icon">
+			            arrow_forward_ios
+			          </span>
+			        </li>
+			        <li data-label="quality"> 
+			          <span> Качество </span>
+			         <span class="material-icons icon">
+			          arrow_forward_ios
+			        </span>
+			        </li>
+			      </ul>
+			    </div>
+
+			    <div class="playback" data-label="speed" hidden>
+			      <span>
+			        <i class="material-icons icon back_arrow"  data-label="settingHome">
+			          arrow_back
+			        </i>
+			        <span>Скорость видео </span>
+			      </span>
+			      <ul>
+			        <li data-speed="0.25">0.25</li>
+
+			        <li data-speed="0.5">0.5</li>
+
+			        <li data-speed="0.75">0.75</li>
+
+			        <li data-speed="1" class="active">Обычная</li>
+
+			        <li data-speed="1.25">1.25</li>
+
+			        <li data-speed="1.5">1.5</li>
+
+			        <li data-speed="1.75">1.75</li>
+
+			        <li data-speed="2">2</li>
+			      </ul>
+			    </div>
+
+			     <div class="playback" data-label="voiceover" hidden>
+			      <span>
+			        <i class="material-icons icon back_arrow"  data-label="settingHome">
+			          arrow_back
+			        </i>
+			        <span>Озвучка видео </span>
+			      </span>
+			      <ul>
+			        
+			      </ul>
+			    </div>
+
+			    <div data-label="quality" hidden>
+			      <span>
+			        <i class="material-icons icon back_arrow" data-label="settingHome">
+			          arrow_back
+			        </i>
+			        <span>Качество видео </span>
+			      </span>
+			      <ul>
+			        <li data-quality="auto" class="active">auto</li>
+			      </ul>
+			    </div>
+			  </div>
+			</div>
+		</div>	
+	</section>
+	<div class="comments"></div>
+</body>
+</html>
