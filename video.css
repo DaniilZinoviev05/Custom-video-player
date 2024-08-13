@@ -223,6 +223,8 @@ body{
 
 .volume-range {
 	-webkit-appearance:none;
+	appearance:none;
+	display: hidden;
 	height:3px;
 	background:white;
 	width:0px;
@@ -249,7 +251,7 @@ body{
 
 .controls .icon:hover .volume-range {
 	width:60px;
-	display:inline-block;
+	display:inlin-block;
 }
 
 .controls .icon:hover .volume-range::-webkit-slider-thumb {
@@ -258,6 +260,28 @@ body{
 	pointer-events:auto;
 	transition:0.5s;
 }
+
+.controls .icon .volume-range::-moz-range-thumb {
+	-webkit-appearance:none;
+	appearance:none;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	border:none;
+	outline:none; 
+	background:white;
+	color:white; 
+	transition: 0.3s;
+	opacity:0;
+}
+
+.controls .icon:hover .volume-range::-moz-range-thumb {
+	position: relative;
+	opacity: 1;
+	pointer-events:auto;
+	transition:0.5s;
+}
+
 
 .settingsBtn {
 	color:white;
@@ -361,6 +385,12 @@ body{
   border-radius: 20px;
 }
 
+@-moz-document url-prefix() {
+	.picture_in_picture  {
+		display: none; /* Скрывает элемент только в Firefox */
+	}
+}
+
 .play_1 {
 	width:80px;
 	height:80px;
@@ -425,11 +455,4 @@ body{
 	.volume,.volume-range,.picture_in_picture {
 		display:none;
 	}
-}
-
-.comments {
-	margin:auto;
-	width:50%;
-	height:900px;
-	background-color:#fff;
 }
