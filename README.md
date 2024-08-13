@@ -8,3 +8,13 @@ To install, write `git clone https://github.com/DaniilZinoviev05/Custom-video-pl
 
 
 To display correctly, run through the [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
+
+
+# [Browser support](#browser-support)
+
+
+Without problems you need to work:
+
+- Firefox
+- Chromium
+- EDGE
