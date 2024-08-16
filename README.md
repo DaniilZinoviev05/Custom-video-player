@@ -6,8 +6,6 @@
 # [How to install](#how-to-install)
 
 
-## How install 
-
 ``` 
 git clone https://github.com/DaniilZinoviev05/Custom-video-player.git
 ```
