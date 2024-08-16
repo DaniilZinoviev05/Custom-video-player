@@ -8,7 +8,7 @@
 
 ## How install 
 
-``` (`git clone https://github.com/DaniilZinoviev05/Custom-video-player.git`) ```
+``` git clone https://github.com/DaniilZinoviev05/Custom-video-player.git ```
 
 
 To display correctly, run through the [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
