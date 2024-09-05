@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/DaniilZinoviev05/Custom-video-player/blob/master/vokoscreenNG-2024-08-13_23-50-41.gif" alt="example"/>
+  <video src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHIxMHRsaXMyZmc2djRydDAyMHQzZ2xld3p0ZW0zOTA4b2tlMGI3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ByfvgbJlRfSvxo4Yos/giphy.mp4" alt="example"/>
 </div>
 
 
